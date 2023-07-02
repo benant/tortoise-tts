@@ -1,3 +1,5 @@
+연습용 저장소입니다. forking 원본 : https://github.com/neonbjb/tortoise-tts/fork
+
 # TorToiSe
 
 Tortoise is a text-to-speech program built with the following priorities:
@@ -54,6 +56,9 @@ will spend a lot of time chasing dependency problems.
 
 First, install miniconda: https://docs.conda.io/en/latest/miniconda.html
 
+! https://docs.conda.io/en/latest/miniconda.html
+! 미니콘다 윈도우64비트 버전 설친 후 실행하려면 윈도우키 > anaconda 입력 > Anaconda Powershell Prompt (miniconda3) or Anaconda Prompt (miniconda3) 를 실행 하면됩니다.
+
 Then run the following commands, using anaconda prompt as the terminal (or any other terminal configured to work with conda)
 
 This will:
@@ -63,6 +68,10 @@ This will:
 1. clone tortoise-tts
 1. change the current directory to tortoise-tts
 1. run tortoise python setup install script
+
+! 엄... 
+! conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia 
+! 여기서 오래 걸림. nvidia 그래픽 카드 없는 노트북에서 해서 그런것 같음. 
 
 ```shell
 conda create --name tortoise python=3.9 numba inflect
